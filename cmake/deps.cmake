@@ -37,4 +37,12 @@ CPMAddPackage(
   GIT_TAG v2.0.1
 )
 
+if (KELBON_TEMPLATE_PROJECT_NAME_ENABLE_TESTING)
+  CPMAddPackage(
+    NAME MOKO3
+    GITHUB_REPOSITORY kelbon/moko3
+    GIT_TAG v0.9.3
+  )
+endif()
+
 find_package(Threads REQUIRED)

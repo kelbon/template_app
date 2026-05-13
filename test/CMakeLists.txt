@@ -9,7 +9,7 @@ foreach(test_src ${KELBON_TEMPLATE_PROJECT_NAME_TESTS})
 
     add_executable(${test_name} ${test_src})
 
-    target_link_libraries(${test_name} PRIVATE KELBON_TEMPLATE_PROJECT_NAMElib)
+    target_link_libraries(${test_name} PRIVATE KELBON_TEMPLATE_PROJECT_NAMElib moko3lib)
     
     set_target_properties(${test_name} PROPERTIES
 		LINKER_LANGUAGE CXX

@@ -1,9 +1,8 @@
 #include "KELBON_TEMPLATE_PROJECT_NAME/common.hpp"
+#include <moko3/moko3.hpp>
 
-int run_tests() {
-  return 0;
+TEST("name") {
 }
 
-int main() {
-  return run_tests();
-}
+REGISTER_TEST_LISTENER(moko3::gtest_listener);
+MOKO3_MAIN;
